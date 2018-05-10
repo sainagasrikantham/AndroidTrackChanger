@@ -1,0 +1,22 @@
+v2.0
+
+Feature(s) Added:
+-----------------
+- Updated user interface
+- Bug fixes
+
+v1.0
+
+Feature(s) Added:
+-----------------
+- Ability to play next song, play previous song and play/pause music
+- Ability to fling to change the music track
+- Ability for the app to be launched bypassing the keyguard screen
+- Ability for the app to be brought to foreground upon screen start
+- Ability for the app to decide if the music is playing and change its behavior
+- Ability to repeat a song
+- Ability to launch app from "ongoing" notification
+
+Bug(s) Fixed:
+-------------
+- None

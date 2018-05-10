@@ -1,0 +1,447 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+   <!-- Main Layout -->
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_margin="15dp"
+       android:orientation="vertical" >
+
+      <!-- Layout for push buttons, and fling icons -->
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:gravity="center"
+          android:orientation="vertical" >
+
+         <!-- Layout containing the "Previous", "Play/Pause" and "Next" push buttons -->
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="0dp"
+             android:gravity="center"
+             android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10.0" />
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:gravity="center"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:gravity="center"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <Button
+                android:id="@+id/play_pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10.0" />
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:gravity="center"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:gravity="center"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10.0" />
+         </LinearLayout>
+         <!-- End of layout containing the "Previous", "Play/Pause" and "Next" push buttons -->
+
+         <!-- Layout containing the "Repeat" push button -->
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:gravity="center"
+             android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/repeat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10.0" />
+         </LinearLayout>
+         <!-- End of layout containing the "Repeat" push button -->
+
+         <!-- Layout containing the "fling" icons -->
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_margin="10dp"
+             android:orientation="horizontal" >
+
+            <!-- Layout containing the "Previous fling" icons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+               <ImageView
+                   android:id="@+id/fling_previous_left"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_fling_previous_1" />
+
+               <!-- Fake Layout -->
+               <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="3dp"
+                  android:gravity="center"
+                  android:orientation="horizontal" >
+               </LinearLayout>
+               <!-- End of Fake Layout -->
+
+               <ImageView
+                   android:id="@+id/fling_previous_middle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_fling_previous_2" />
+
+               <!-- Fake Layout -->
+               <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="3dp"
+                  android:gravity="center"
+                  android:orientation="horizontal" >
+               </LinearLayout>
+
+               <!-- End of Fake Layout -->
+               <ImageView
+                   android:id="@+id/fling_previous_right"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_fling_previous_1" />
+            </LinearLayout>
+            <!-- End of layout containing the "Previous fling" icons -->
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="3dp"
+               android:gravity="left"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <!-- Layout containing the "Next fling" icons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+               <ImageView
+                   android:id="@+id/fling_next_left"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_fling_foward_1" />
+
+               <!-- Fake Layout -->
+               <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="3dp"
+                  android:gravity="center"
+                  android:orientation="horizontal" >
+               </LinearLayout>
+               <!-- End of Fake Layout -->
+
+               <ImageView
+                   android:id="@+id/fling_next_middle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_fling_foward_2" />
+
+               <!-- Fake Layout -->
+               <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="3dp"
+                  android:gravity="center"
+                  android:orientation="horizontal" >
+               </LinearLayout>
+               <!-- End of Fake Layout -->
+
+               <ImageView
+                   android:id="@+id/fling_next_right"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_fling_foward_1" />
+            </LinearLayout>
+            <!-- End of layout containing the "Next fling" icons -->
+
+         </LinearLayout>
+         <!-- End of layout containing the "fling" icons -->
+
+         <!-- Fake Layout -->
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="left"
+            android:orientation="vertical" >
+         </LinearLayout>
+         <!-- End of Fake Layout -->
+
+         <!-- "Now Playing" text view -->
+         <TextView
+             android:id="@+id/now_playing_textview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:shadowColor="#FFFFFF"
+             android:shadowDx="0"
+             android:shadowDy="0"
+             android:shadowRadius="15.0"
+             android:text="@string/now_playing"
+             android:textColor="#000000"
+             android:typeface="serif"
+             android:textSize="32sp" />
+
+      </LinearLayout>
+      <!-- End of layout for push buttons, and fling icons -->
+
+      <!-- Layout for track meta-data & arrows -->
+      <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="0dp"
+         android:gravity="center"
+         android:orientation="horizontal" >
+
+         <!-- Layout for track meta-data -->
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="0dp"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+            <!-- Layout for "Track" -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/track_label_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="0dp"
+                   android:gravity="center"
+                   android:shadowColor="#FFFFFF"
+                   android:shadowDx="0"
+                   android:shadowDy="0"
+                   android:shadowRadius="10.0"
+                   android:text="@string/track"
+                   android:textColor="#000000"
+                   android:textSize="24sp"
+                   android:typeface="serif"
+                   android:scrollHorizontally="false"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/track_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="0dp"
+                   android:gravity="center"
+                   android:shadowColor="#FFFFFF"
+                   android:shadowDx="0"
+                   android:shadowDy="0"
+                   android:shadowRadius="10.0"
+                   android:text="@string/track"
+                   android:textColor="#800000"
+                   android:typeface="serif"
+                   android:scrollHorizontally="false"
+                   android:textSize="15sp" />
+            </LinearLayout>
+            <!-- End of layout for "Track" -->
+
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:gravity="center"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <!-- Layout for "Artist" -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/artist_label_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="0dp"
+                   android:gravity="center"
+                   android:shadowColor="#FFFFFF"
+                   android:shadowDx="0"
+                   android:shadowDy="0"
+                   android:shadowRadius="10.0"
+                   android:text="@string/artist"
+                   android:textColor="#000000"
+                   android:textSize="24sp"
+                   android:typeface="serif"
+                   android:scrollHorizontally="false"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/artist_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="0dp"
+                   android:gravity="center"
+                   android:shadowColor="#FFFFFF"
+                   android:shadowDx="0"
+                   android:shadowDy="0"
+                   android:shadowRadius="10.0"
+                   android:text="@string/artist"
+                   android:textColor="#800000"
+                   android:typeface="serif"
+                   android:scrollHorizontally="false"
+                   android:textSize="15sp" />
+            </LinearLayout>
+            <!-- End of layout for "Artist" -->
+
+            <!-- Fake Layout -->
+            <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="4dp"
+               android:gravity="center"
+               android:orientation="vertical" >
+            </LinearLayout>
+            <!-- End of Fake Layout -->
+
+            <!-- Layout for "Album" -->
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/album_label_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="0dp"
+                   android:gravity="center"
+                   android:shadowColor="#FFFFFF"
+                   android:shadowDx="0"
+                   android:shadowDy="0"
+                   android:shadowRadius="10.0"
+                   android:text="@string/album"
+                   android:textColor="#000000"
+                   android:textSize="24sp"
+                   android:typeface="serif"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/album_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="0dp"
+                   android:gravity="center"
+                   android:shadowColor="#FFFFFF"
+                   android:shadowDx="0"
+                   android:shadowDy="0"
+                   android:shadowRadius="10.0"
+                   android:text="@string/album"
+                   android:textColor="#800000"
+                   android:typeface="serif"
+                   android:textSize="15sp" />
+            </LinearLayout>
+            <!-- End of layout for "Album" -->
+
+         </LinearLayout>
+         <!-- End of layout for track meta-data -->
+
+      </LinearLayout>
+      <!-- End of layout for track meta-data & arrows -->
+
+   </LinearLayout>
+   <!-- End of Main Layout -->
+
+</RelativeLayout>
